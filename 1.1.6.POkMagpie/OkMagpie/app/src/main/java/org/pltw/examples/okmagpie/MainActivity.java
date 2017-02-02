@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView txtSpeechInput;
     Button submitTextInputButton;
     Button speechToTextButton;
-    Magpie4 maggie;
+    Magpie3 maggie;
     private final int REQ_CODE_SPEECH_INPUT = 100;
 
     @Override
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         keystrokeEditText = (EditText)findViewById(R.id.keystrokeInput);
         submitTextInputButton = (Button)findViewById(R.id.submitTextInput);
         speechToTextButton = (Button)findViewById(R.id.speechToTextButton);
-        maggie = new Magpie4();
+        maggie = new Magpie3();
         final SpeechRecognizer speechRecognizer = SpeechRecognizer.createSpeechRecognizer(this);
 
         maggiesVoice=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
